@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
+import { PageLayout } from '@/components/page-layout';
 
 const Memory = () => {
-  return (
-    <div>Memory</div>
-  )
-}
+  const breadcrumbs = [{ label: 'Gry', href: '/' }, { label: 'Memory' }];
 
-export default Memory
+  return (
+    <PageLayout breadcrumbs={breadcrumbs}>
+      <h1 className="text-4xl font-bold mb-8">Memory</h1>
+    </PageLayout>
+  );
+};
+
+export default Memory;

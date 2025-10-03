@@ -1,12 +1,12 @@
-"use client"
+'use client';
 
-import * as React from "react"
-import { Gamepad2 } from "lucide-react"
+import * as React from 'react';
+import { Gamepad2 } from 'lucide-react';
 import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-} from "@/components/ui/sidebar"
+} from '@/components/ui/sidebar';
 
 export function AppLogo() {
   return (
@@ -19,11 +19,13 @@ export function AppLogo() {
             </div>
             <div className="grid flex-1 text-left text-sm leading-tight">
               <span className="truncate font-semibold">Mini Play</span>
-              <span className="truncate text-xs text-muted-foreground">Gry online</span>
+              <span className="truncate text-xs text-muted-foreground">
+                Gry online
+              </span>
             </div>
           </a>
         </SidebarMenuButton>
       </SidebarMenuItem>
     </SidebarMenu>
-  )
+  );
 }

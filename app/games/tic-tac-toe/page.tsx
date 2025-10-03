@@ -1,9 +1,17 @@
-import React from 'react'
+import React from 'react';
+import { PageLayout } from '@/components/page-layout';
 
 const TicTacToe = () => {
-  return (
-    <div>TicTacToe</div>
-  )
-}
+  const breadcrumbs = [
+    { label: 'Gry', href: '/' },
+    { label: 'Kółko i krzyżyk' },
+  ];
 
-export default TicTacToe
+  return (
+    <PageLayout breadcrumbs={breadcrumbs}>
+      <h1 className="text-4xl font-bold mb-8">Kółko i krzyżyk</h1>
+    </PageLayout>
+  );
+};
+
+export default TicTacToe;
